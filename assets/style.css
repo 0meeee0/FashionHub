@@ -33,9 +33,13 @@ nav ul li{
     margin: 0 20px;
     justify-content: space-between;
     gap: 60rem;
+    font-weight: 900;
 }
 .k7l{
     color: black;
+}
+#gg{
+    color: #CAB273;
 }
 /* nav bar \*/
 
@@ -44,7 +48,7 @@ nav ul li{
     color: white;
     justify-content: center;
     text-align: center;
-    font-size: 50px;
+    font-size: 3rem;
 }
 .des{
     /* background-color: blueviolet; */
@@ -168,11 +172,22 @@ span{
     align-items: center;
 }
 
+.divided{
+    background: linear-gradient(
+    to right,
+    black 0%,
+    black 50%,
+    white 50%,
+    white 100%
+  );
+  padding: 8rem;
+  margin-bottom: 4rem;
+}
 .wrps{
-    margin: 5rem 0;
+    box-shadow: 1px 4px 4px;
     color: black;
     background-color:beige;
-    width: 30%;
+    width: 40%;
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
@@ -192,7 +207,7 @@ span{
     padding: .5rem;
     border-color: #CAB273;
 }
-.inf a{
+.inf #kkk{
     padding: .5rem;
     background-color: #CAB273;
     width: 20%;
@@ -200,7 +215,10 @@ span{
     margin-right: auto;
     margin-top: 1rem;
     border-radius: 10px;
-    
+}
+
+.inf #spn{
+    color: black;
 }
 
 .ll{
@@ -221,6 +239,7 @@ span{
     background-color: white;
 }
 .fq{
+    margin-top: 15rem;
     margin-left:  10% ;
     font-size: 2rem;
 }
@@ -240,6 +259,11 @@ span{
     font-size: 1em;
 
 }
+.nb{
+    background-color: #CAB273;
+    width: 20%;
+    border-radius: 0 4px 4px 0;
+}
 /* sign page */
 
 /* footer */
@@ -247,5 +271,6 @@ footer{
     margin-top: 4rem;
     color: white;
     text-align: center;
+    bottom: 0;
 }
 /* footer */
