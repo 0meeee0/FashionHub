@@ -39,7 +39,10 @@ nav ul li{
     color: black;
 }
 #gg{
-    color: #CAB273;
+    color: #dea412;
+}
+.gl{
+    background: linear-gradient(135deg, #CAB273 60%, rgb(225, 190, 32));
 }
 /* nav bar \*/
 
