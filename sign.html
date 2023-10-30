@@ -8,7 +8,7 @@
 </head>
 <body class="wh">
     <nav >
-        <a class="logo k7l" href="#">FashionHub</a>
+        <a class="logo k7l" href="index.html">FashionHub</a>
         <ul>
             <li><a class="k7l" href="index.html">Home</a></li>
             <li><a class="k7l" href="catalogue.html">Catalogue</a></li>
@@ -25,7 +25,7 @@
             <h2>Welcome</h2>
             <div class="inf">
                 <input type="text" placeholder="email">
-                <input type="text" placeholder="password">
+                <input type="password" placeholder="password">
                 <a id="kkk" href="#">login</a><br><br>
                 <span>Not a member yet? <a id="spn"href="#yo"><u>Sign up</u></a></span>
             </div>
@@ -35,13 +35,14 @@
     <!--sign-->
     <div id="yo" class="wrps wh">
         <h2>Join us</h2>
-        <div class="inf sgs">
+        <div class="inf sgs" onsubmit="return validateForm()" novalidate>
             <input type="text" placeholder="Name" required="">
             <input type="email" placeholder="Email">
             <input type="password" placeholder="Password">
-            <input type="tel" placeholder="Phone Number">
+            <input type="phonenumber" placeholder="Phone Number">
             <input type="text" placeholder="Address">
             <a class="nb" href="#">sign up</a>
+            <a class="nb" href="ps.html">sign up</a>
         </div>
     </div>
     <div>
@@ -69,6 +70,8 @@
             <p>Can I change my shipping address?</p>
         </div>
     </div>
+
+    <script src="assets/index.js"></script>
     <!--/sign-->
     <footer class="k7l">
         <p>©2023. All Rights Reserved.</p>
