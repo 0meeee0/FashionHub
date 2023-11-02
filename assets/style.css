@@ -275,6 +275,9 @@ span{
         display: flex;
       
     }
+    .ts{
+        display: none;
+    }
     .divided{
         background: none;
         background-color: black;
