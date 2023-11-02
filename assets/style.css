@@ -35,6 +35,7 @@ nav ul li{
     gap: 60rem;
     font-weight: 900;
 }
+
 .k7l{
     color: black;
 }
@@ -43,6 +44,71 @@ nav ul li{
 }
 .gl{
     background: linear-gradient(135deg, #CAB273 60%, rgb(225, 190, 32));
+}
+.navbar-conatiner-burger{
+    display: none;
+
+}
+.bar{
+    height:3px;
+    width:100%;
+    background-color: white;
+    border-radius: 33px;
+}
+.toggle{
+    position: absolute;
+    top:5%;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+    width: 30px;
+    height: 21px;
+   
+}
+@media (max-width: 900px){
+    .navbar-conatiner{
+        display: none;
+    }
+    
+     .navbar-conatiner-burger{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+     
+     }
+     .nav-desktop{
+        display: none;
+     }
+     .navlink{
+        /* padding: 2rem; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        height: 200px;
+        position: fixed;
+        top: 0;
+        transform: scale(0);
+        right: 0;
+        opacity: 0;
+        background-color:#E0BD63;
+        z-index: 1;
+        transition: all 0.2s ease-in-out;
+     }
+     .show{
+        opacity: 1;
+        top: 13%;
+        transform: scale(1);
+     }
+     nav ul li {
+         line-height: 3rem;
+        margin: 22px 50px;
+        display: block;
+     }
+     
 }
 /* nav bar \*/
 
@@ -205,6 +271,10 @@ span{
   margin-bottom: 4rem;
 }
 @media screen and (max-width:900px) {
+    .toggle{
+        display: flex;
+      
+    }
     .divided{
         background: none;
         background-color: black;
@@ -249,13 +319,6 @@ span{
 .inf #spn{
     color: black;
 }
-@media screen and (max-width: 900px) {
-    #yo{
-        display: none;
-    }
-    
-}
-
 .ll{
     display: flex;
     width: 50%;
@@ -307,7 +370,7 @@ span{
 }
 .nb{
     background-color: #CAB273;
-    width: 20%;
+    width: 30%;
     border-radius: 0 4px 4px 0;
 }
 /* sign page */

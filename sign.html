@@ -9,42 +9,54 @@
 <body class="wh">
     <nav >
         <a class="logo k7l" href="index.html">FashionHub</a>
-        <ul>
-            <li><a class="k7l" href="index.html">Home</a></li>
-            <li><a class="k7l" href="catalogue.html">Catalogue</a></li>
-            <li><a  id="gg" class="k7l" href="#">Sign</a></li>
-        </ul>
+        <div class="navlink">
+
+            <ul>
+                <li><a class="k7l" href="index.html">Home</a></li>
+                <li><a class="k7l" href="catalogue.html">Catalogue</a></li>
+                <li><a  id="gg" class="k7l" href="#">Sign</a></li>
+            </ul>
+        </div>
     </nav>
+    <!-- brgr -->
+    <nav class="navbar-conatiner-burger">
+    
+        <button onclick="onHumberger()" class="toggle">
+         <span class="bar"></span>
+         <span class="bar"></span>
+         <span class="bar"></span>
+     </button> 
+     <div class="navlink" id="links">
+     <ul>
+         <li><a href="index.html">Home</a></li>
+         <li><a href="catalogue.html">Catalogue</a></li>
+         <li><a lass="active"  href="#">Sign</a></li>
+
+     </ul>
+  </div>
+ </nav>
     <div class="ts">
         <img style="width: 100%;" height="577" src="assets/imgs/sign-banner.png" alt="banner">
     </div>
     <!--form-->
     <div class="divided">
-        <div class="wrps">
-            <div class="ll"> </div>
-            <h2>Welcome</h2>
-            <div class="inf">
-                <input type="text" placeholder="email">
-                <input type="password" placeholder="password">
-                <a id="kkk" href="#">login</a><br><br>
-                <span>Not a member yet? <a id="spn"href="#yo"><u>Sign up</u></a></span>
+        <form>
+            <div id="yo" class="wrps wh">
+                <h2>Join us</h2>
+                <div class="inf sgs"  novalidate>
+                    <input id="name" type="text" placeholder="Name" required="">
+                    <input id="email" type="email" placeholder="Email" required="">
+                    <input id="password" type="password" placeholder="Password" required="">
+                    <input id="phonenumber" type="phonenumber" placeholder="Phone Number" required="">
+                    <input type="text" placeholder="Address" required="">
+                    <button onclick="validateForm()" class="nb">signup</button>
+                    <!-- <a type="submit" class="nb" href="#">sign up</a> -->
+                </div>
             </div>
-        </div>
+        </form>
     </div>
     <!--/form-->
     <!--sign-->
-    <div id="yo" class="wrps wh">
-        <h2>Join us</h2>
-        <div class="inf sgs" onsubmit="return validateForm()" novalidate>
-            <input type="text" placeholder="Name" required="">
-            <input type="email" placeholder="Email">
-            <input type="password" placeholder="Password">
-            <input type="phonenumber" placeholder="Phone Number">
-            <input type="text" placeholder="Address">
-            <a class="nb" href="#">sign up</a>
-            <a class="nb" href="ps.html">sign up</a>
-        </div>
-    </div>
     <div>
         <h2 class="fq">Frequently Asked Questions</h2>
     </div>
